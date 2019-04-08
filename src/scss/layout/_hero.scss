@@ -17,7 +17,9 @@
 .hero-media {
 	position: relative; /* To display all elements above the background color */
 
-	img,
+	img {
+		width: 600px;
+	}
 	svg {
 		width: 100%;
 		max-width: 320px;
@@ -63,7 +65,12 @@
 
 	.hero-media {
 
-		img,
+		img {
+			width: 70%;
+			margin: auto;
+		}
+
+
 		svg {
 			max-width: none;
 			width: 528px;
