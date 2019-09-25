@@ -1,13 +1,44 @@
-.badge-container {
-    max-width: 200px;
-    float: left;
+.badges {
+    text-align: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+
+    .badge-container {
+        margin: auto;
+
+        .badge {
+            height: 75px;
+            float: left;
+        
+            img { 
+                height: 75px;
+            }
+        }
+    }
+
+    .github {
+        margin: auto;
+    }    
 }
 
-.badge {
-    height: 75px;
+@include media( '>medium' ) {
+    .badges {
+        flex-direction: row;
 
-    img { 
-        height: 75px; 
-        margin-left: -12px;
+        .github {
+            margin-left: 0;
+        }
+    }
+}
+
+@include media( '<small' ) {
+    .badges .badge-container .badge  {
+        float: none;
+        margin: auto;
+
+        .github {
+            margin-left: 0;
+        }
     }
 }
