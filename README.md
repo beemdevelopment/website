@@ -1,12 +1,17 @@
-# Sienna
+# Aegis website
 
-A landing page template.
+This repository contains the source of Aegis' website, hosted at:
+https://getaegis.app.
 
-* [Getting started](#getting-started)
+The website theme is based on the [Sienna
+Template](https://bitbucket.org/pasqualevitiello/sienna), but was adapted so
+that it can be built with [Hugo](https://gohugo.io).
 
-## Getting started
-* First, ensure that node.js & npm are both installed. If not, choose your OS and installation method from [this page](https://nodejs.org/en/download/package-manager/) and follow the instructions.
-* Next, use your command line to enter your project directory.
-* This template comes with a ready-to-use package file called `package-sample.json`. You just need to rename it to `package.json`, then run `npm install` to install all of the dependencies into your project.
+## Build
 
-You're ready to go! Run any task by typing `npm run task` (where "task" is the name of the task in the `"scripts"` object). The most useful task for rapid development is `watch`. It will start a new server, open up a browser and watch for any SCSS or JS changes in the `src` directory; once it compiles those changes, the browser will automatically inject the changed file(s)!
+To build the website, first install
+[Hugo](https://gohugo.io/getting-started/installing). Make sure to get the
+extended version for Sass support).
+
+Then run ``hugo`` in the root of this repository. The generated website will be
+available in the ``public`` folder.

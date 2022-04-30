@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aegis Authenticator - Secure 2FA app for Android</title>
+  <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara:400,600,700|Frank+Ruhl+Libre:700" rel="stylesheet">
+  {{ $style := resources.Get "scss/style.scss" | resources.ToCSS (dict "targetPath" "css/style.css") }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  <link href="images/icon.png" rel="shortcut icon" type="image/x-icon" />
+  <script src="js/scrollreveal.min.js"></script>
+</head>
+<body class="is-boxed has-animations">
+  <div class="body-wrap boxed-container">
+    <header class="site-header">
+      <div class="header-sun is-revealing">
+        {{ readFile "assets/svg/sun.svg" | safeHTML }}
+      </div>
+      <div class="container">
+        <div class="site-header-inner">
+          <div class="brand header-brand">
+            <h1 class="m-0">
+              <img src="images/icon.png" width="50">
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-inner">
+            <div class="hero-copy">
+              <h1 class="hero-title mt-0">Aegis Authenticator</h1>
+              <p class="hero-paragraph">
+                Aegis Authenticator is a free, secure and open source app for
+                Android to manage your 2-step verification tokens for your
+                online services.
+              </p>
+              <div class="badges">
+                <div class="badge-container">
+                  <a
+                  href="https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis"
+                  class="badge" rel="nofollow">
+                    <img height="80" alt="Get it on Google Play" src="images/googleplay.png" style="max-width:100%;">
+                  </a>
+                  <a href="https://f-droid.org/en/packages/com.beemdevelopment.aegis" class="badge" rel="nofollow">
+                    <img height="80" alt="Get it on F-Droid" src="images/fdroid.png" style="max-width:100%;">
+                  </a>
+                </div>
+                <div class="github" style="max-width: 30px;">
+                  <a href="https://github.com/beemdevelopment/Aegis">
+                    {{ readFile "assets/svg/github-alt.svg" | safeHTML }}
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="hero-illustration">
+              <div class="hero-shapes is-revealing">
+                {{ readFile "assets/svg/shapes.svg" | safeHTML }}
+              </div>
+              <div class="hero-media is-revealing" style="perspective:800px">
+                <img src="images/main.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features-extended section">
+        <div class="container">
+          <div class="features-extended-inner section-inner has-top-divider">
+            <div class="features-extended-header text-center">
+              <div class="container-sm">
+                <h2 class="section-title mt-0">Meet Aegis Authenticator</h2>
+                <p class="section-paragraph">
+                  Aegis is an alternative to proprietary two factor
+                  authentication apps like Google Authenticator and Authy. Its
+                  most important features, are security and backups. 
+                </p>
+              </div>
+            </div>
+            <div class="feature-extended">
+              <div class="feature-extended-image is-revealing">
+                <img src="images/encryption.png"/>
+              </div>
+              <div class="feature-extended-body">
+                <h3 class="mt-0">Encryption</h3>
+                <p>
+                  All of your one-time passwords are stored in a vault. If you
+                  choose to set a password (highly recommended), the vault will
+                  be encrypted using strong cryptography. If someone with
+                  malicious intent gets a hold of the vault file, it’s
+                  impossible for them to retrieve the contents without knowing
+                  the password. Entering your password each time you need access
+                  to a one-time password can be cumbersome. Fortunately, you can
+                  also enable biometric unlock if your device has a biometrics
+                  sensor (i.e. fingerprint or face unlock).
+                </p>
+              </div>
+            </div>
+            <div class="feature-extended">
+              <div class="feature-extended-image is-revealing">
+                <img src="images/organize.png"/>
+              </div>
+              <div class="feature-extended-body">
+                <h3 class="mt-0">Organization</h3>
+                <p>
+                  Over time, you'll likely accumulate tens of entries in your
+                  vault. Aegis Authenticator has lots of organization options to
+                  make finding the one you need at a particular moment easier.
+                  Set a custom icon for an entry to make it easier to find.
+                  Search by account name or service name. Have a lot of one-time
+                  passwords? Add them to custom groups for easier access.
+                  Personal, Work and Social can each get their own group.
+                </p>
+              </div>
+            </div>
+            <div class="feature-extended">
+              <div class="feature-extended-image is-revealing">
+                <img src="images/backups.png"/>
+              </div>
+              <div class="feature-extended-body">
+                <h3 class="mt-0">Backups</h3>
+                <p>
+                  To make sure you will never lose access to your online
+                  accounts, Aegis Authenticator can create automatic backups of
+                  the vault to a location of your choosing. If your cloud
+                  provider supports the Storage Access Framework of Android
+                  (like Nextcloud does), it can even create automatic backups to
+                  the cloud. Creating manual exports of the vault is also
+                  supported.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials section">
+        <div class="container">
+          <div class="testimonials-inner section-inner">
+            <h2 class="section-title mt-0 text-center">Reviews</h2>
+            <div class="testimonials-wrap">
+              <div class="testimonial text-center text-xs is-revealing">
+                <div class="testimonial-inner">
+                  <div class="testimonial-main">
+                    <div class="testimonial-header">
+                      <img class="mb-16" src="images/testimonial-01.png" alt="Testimonial">
+                    </div>
+                    <div class="testimonial-body">
+                      <p>
+                        Wonderful new 2FA app! I've been looking for one with
+                        password security and the ability to use the phone's
+                        fingerprint sensor to open.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="testimonial-footer">
+                    <div class="testimonial-name">A Google User</div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial text-center text-xs is-revealing">
+                <div class="testimonial-inner">
+                  <div class="testimonial-main">
+                    <div class="testimonial-header">
+                      <img class="mb-16" src="images/testimonial-01.png" alt="Testimonial">
+                    </div>
+                    <div class="testimonial-body">
+                      <p>
+                        The app is the new player on 2fa market. Love that it's
+                        open source and comes with more secure encryption out of
+                        box than competitors. Devs are super active and
+                        responsive to the feedback.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="testimonial-footer">
+                    <div class="testimonial-name">A Google User</div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial text-center text-xs is-revealing">
+                <div class="testimonial-inner">
+                  <div class="testimonial-main">
+                    <div class="testimonial-header">
+                      <img class="mb-16" src="images/testimonial-01.png" alt="Testimonial">
+                    </div>
+                    <div class="testimonial-body">
+                      <p>
+                        Simple, effective and the peace of mind that comes with
+                        open source code. Bye bye Google Authenticator!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="testimonial-footer">
+                    <div class="testimonial-name">A Google User</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pricing section">
+        <div class="container">
+          <div class="pricing-inner section-inner">
+            <h2 class="section-title mt-0 text-center">Frequently Asked Questions</h2>
+            <div class="pricing-faqs container-sm">
+              <ul class="accordion">
+                <li>
+                  <div class="accordion-title">
+                    <span>What does your app offer that other 2FA apps do not?</span>
+                    <div class="accordion-icon"></div>
+                  </div>
+                  <div class="accordion-body">
+                    <p>
+                      Compared to other 2FA apps, we think Aegis stands out in
+                      terms of its simplicity and security. Most popular apps
+                      like Google Authenticator and FreeOTP don't bother with
+                      additional security measures. They allow access to your
+                      tokens right after opening the app. Aegis, on the other
+                      hand, encrypts all of your tokens at rest and requires a
+                      password or the touch of a finger to decrypt them.
+                    </p>
+                    <p>
+                      Another important feature is the ability to export your
+                      tokens and import them into another device. Google
+                      Authenticator doesn't have this, which has not only
+                      annoyed users for years, but has also resulted in loss of
+                      access to lots of accounts.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="accordion-title">
+                    <span>Can you implement feature x and y?</span>
+                    <div class="accordion-icon"></div>
+                  </div>
+                  <div class="accordion-body">
+                    <p>Maybe! We certainly welcome feature requests and we make
+                    sure to consider every one of them. However, as we work on
+                    this app in our spare time, we can't make any promises as to
+                    when or if it will make it into the app. We usually work on
+                    the features we would like to have ourselves, so if you'd
+                    like to see a feature sooner rather than later, the fastest
+                    way would be to contribute! We're happy to help you in the
+                    process. The code is available on <a
+                    href="https://github.com/beemdevelopment/Aegis/issues">GitHub</a>.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="accordion-title">
+                    <span>I found a bug! Where can I report it?</span>
+                    <div class="accordion-icon"></div>
+                  </div>
+                  <div class="accordion-body">
+                    <p>Yikes! We track all issues and feature requests on <a
+                    href="https://github.com/beemdevelopment/Aegis/issues">GitHub</a>.
+                    Please submit an issue there. If you prefer, you can also <a
+                    href="mailto:beemdevelopment+support@gmail.com">send us an
+                    e-mail</a>.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="accordion-title">
+                    <span>Can I support your work?</span>
+                    <div class="accordion-icon"></div>
+                  </div>
+                  <div class="accordion-body">
+                    <p>Yes! We take donations on <a
+                    href="https://www.buymeacoffee.com/beemdevelopment">Buy Me A
+                    Coffee</a>, in case you'd like to send a few dollars our
+                    way. There's also an even better way you can help out, by
+                    contributing! All of the code is free and open source, so
+                    you can grab a copy of it from <a
+                    href="https://github.com/beemdevelopment/Aegis">GitHub</a>
+                    and start hacking!</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer-inner">
+          <div class="brand footer-brand">
+            <a href="#">
+              <img src="images/icon.png" width="50">
+            </a>
+          </div>
+          <ul class="footer-links list-reset">
+            <li>
+              <a href="aegis/privacy.html">Privacy Policy</a>
+            </li>
+          </ul>
+          <ul class="footer-social-links list-reset">
+            <li>
+              <a href="https://github.com/beemdevelopment/Aegis">
+                <span class="screen-reader-text">GitHub</span>
+                {{ readFile "assets/svg/github.svg" | safeHTML }}
+              </a>
+            </li>
+            <li>
+              <a href="https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis">
+                <span class="screen-reader-text">Google Play Store</span>
+                {{ readFile "assets/svg/googleplay.svg" | safeHTML }}
+              </a>
+            </li>
+          </ul>
+          <div class="footer-copyright">&copy; 2022 Beem Development, all rights reserved</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
