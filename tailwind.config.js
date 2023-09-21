@@ -5,7 +5,23 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        "loop-18s": "loop 18s linear infinite",
+        "loop-22s": "loop 22s linear infinite",
+        "loop-25s": "loop 25s linear infinite",
+
+        "loop-60s": "loop 60s linear infinite",
+        "loop-50s": "loop 50s linear infinite",
+      },
+
+      keyframes: {
+        loop: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-50% - var(--gap)/2))" },
+        },
+      }
+    },
   },
   plugins: [],
 }

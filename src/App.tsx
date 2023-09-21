@@ -3,6 +3,7 @@ import GooglePlayIcon from "./assets/svg/googleplay.svg";
 import FDroidIcon from "./assets/svg/fdroid.svg";
 import HeroScreenshot from "./assets/screenshots/hero-transparent.png";
 import Features from "./components/Features";
+import ReviewSection from "./components/Reviews/ReviewSection";
 
 function App() {
   return (
@@ -126,7 +127,10 @@ function App() {
             </div>
           </div>
         </div>
+
         <Features></Features>
+
+        <ReviewSection></ReviewSection>
       </div>
     </>
   );
