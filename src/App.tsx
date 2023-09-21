@@ -2,6 +2,7 @@ import "./App.css";
 import GooglePlayIcon from "./assets/svg/googleplay.svg";
 import FDroidIcon from "./assets/svg/fdroid.svg";
 import HeroScreenshot from "./assets/screenshots/hero.png";
+import Features from "./components/Features";
 
 function App() {
   return (
@@ -125,6 +126,7 @@ function App() {
             </div>
           </div>
         </div>
+        <Features></Features>
       </div>
     </>
   );
