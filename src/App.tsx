@@ -1,7 +1,7 @@
 import "./App.css";
 import GooglePlayIcon from "./assets/svg/googleplay.svg";
 import FDroidIcon from "./assets/svg/fdroid.svg";
-import HeroScreenshot from "./assets/screenshots/hero.png";
+import HeroScreenshot from "./assets/screenshots/hero-transparent.png";
 import Features from "./components/Features";
 
 function App() {
