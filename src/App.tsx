@@ -2,6 +2,7 @@ import "./App.css";
 import HeroScreenshot from "./assets/screenshots/hero.png";
 import Features from "./components/Features";
 import ReviewSection from "./components/Reviews/ReviewSection";
+import QRCode from "react-qr-code";
 
 function App() {
   return (
@@ -72,7 +73,7 @@ function App() {
 
         <div className="absolute top-0 h-[1200px] pointer-events-none w-screen bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)]"></div>
         <div className="">
-          <div className="overflow-hidden  dark:bg-gray-900 mx-auto max-w-6xl lg:pt-44 lg:pb-44 pt-24 pb-24 flex-col align-center justify-center py-8 px-5 xl:px-0">
+          <div className="overflow-hidden xl:overflow-visible  dark:bg-gray-900 mx-auto max-w-6xl lg:pt-44 lg:pb-44 pt-24 pb-24 flex-col align-center justify-center py-8 px-5 xl:px-0">
             <div className="relative xl:container m-auto px-6 md:px-12 lg:px-6">
               <div className="lg:flex">
                 <div className="relative mt-8 md:mt-8 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto text-center lg:text-left lg:mr-auto lg:w-7/12">
@@ -174,6 +175,19 @@ function App() {
                     />
                     <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-white dark:from-gray-900"></div>
                     <div className="bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-white dark:from-gray-900"></div>
+                  </div>
+                </div>
+                <div className="hidden p-3 ring-1 ring-neutral-950/25 rounded-lg xl:block xl:absolute  bg-white shadow-lg z-10 top-32 -right-10">
+                  <div
+                    className=""
+                    style={{ height: "auto", margin: "0 auto", maxWidth: 64, width: "100%" }}
+                  >
+                    <QRCode
+                      size={256}
+                      style={{ height: "auto", maxWidth: "100%", width: "100%" }}
+                      value="https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis"
+                      viewBox={`0 0 256 256`}
+                    />
                   </div>
                 </div>
               </div>
