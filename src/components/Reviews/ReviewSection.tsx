@@ -15,7 +15,7 @@ function ReviewSection() {
 
   return (
     <div className=" ">
-      <div className="overflow-hidden  mx-auto max-w-6xl lg:pt-16 pt-40 pb-56 flex-col align-center justify-center py-8 px-5 xl:px-0">
+      <div className="overflow-hidden  mx-auto max-w-6xl lg:pt-16 pt-40 pb-40 flex-col align-center justify-center py-8 px-5 xl:px-0">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold tracking-tight  ">What our users have to say</h2>
           <p className="mt-4 text-lg text-gray-500">

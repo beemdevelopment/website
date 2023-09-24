@@ -1,5 +1,6 @@
 import "./App.css";
 import HeroScreenshot from "./assets/screenshots/hero.png";
+import Faq from "./components/Faq";
 import Features from "./components/Features";
 import ReviewSection from "./components/Reviews/ReviewSection";
 import QRCode from "react-qr-code";
@@ -7,7 +8,7 @@ import QRCode from "react-qr-code";
 function App() {
   return (
     <>
-      <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-300">
+      <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-300 pb-28">
         <header>
           <input
             type="checkbox"
@@ -198,6 +199,8 @@ function App() {
         <Features></Features>
 
         <ReviewSection></ReviewSection>
+
+        <Faq></Faq>
       </div>
     </>
   );
