@@ -1,12 +1,12 @@
 import "./App.css";
-import HeroScreenshot from "./assets/screenshots/hero-transparent.png";
+import HeroScreenshot from "./assets/screenshots/hero.png";
 import Features from "./components/Features";
 import ReviewSection from "./components/Reviews/ReviewSection";
 
 function App() {
   return (
     <>
-      <div className="bg-white dark:bg-gray-900">
+      <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-300">
         <header>
           <input
             type="checkbox"
@@ -20,13 +20,13 @@ function App() {
             <div className="max-w-6xl m-auto px-6 md:px-12 lg:px-6">
               <div className="flex flex-wrap items-center justify-between gap-6 md:py-3 md:gap-0 lg:py-5">
                 <div className="w-full items-center flex justify-between lg:w-auto">
-                  <a className="relative z-10" href="#" aria-label="logo">
-                    Aegis
+                  <a className="relative z-10 w-10" href="#" aria-label="logo">
+                    <img src="/assets/icon.png" />
                   </a>
                 </div>
                 <div className="navmenu hidden w-full flex-wrap justify-end items-center mb-16 space-y-8 p-6 border border-gray-100 rounded-3xl shadow-2xl shadow-gray-300/20 bg-white dark:bg-gray-800 lg:space-y-0 lg:p-0 lg:m-0 lg:flex md:flex-nowrap lg:bg-transparent lg:w-7/12 lg:shadow-none dark:shadow-none dark:border-gray-700 lg:border-0">
                   <div className="text-gray-600 dark:text-gray-300 lg:pr-4">
-                    <ul className="space-y-6 tracking-wide font-medium text-base lg:text-sm lg:flex lg:space-y-0">
+                    <ul className="space-y-6 tracking-wide font-medium dark:text-gray text-base lg:text-sm lg:flex lg:space-y-0">
                       <li>
                         <a
                           href="#"
@@ -38,7 +38,7 @@ function App() {
                       <li>
                         <a
                           href="#"
-                          className="block md:px-4 transition hover:text-primary dark:hover:text-primaryLight"
+                          className="block  md:px-4 transition hover:text-primary dark:hover:text-primaryLight"
                         >
                           <span>Reviews</span>
                         </a>
@@ -69,19 +69,20 @@ function App() {
             </div>
           </nav>
         </header>
-        <div className="absolute top-0  h-screen w-screen bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)]"></div>
+
+        <div className="absolute top-0 h-[1200px] pointer-events-none w-screen bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)]"></div>
         <div className="">
-          <div className="overflow-hidden  dark:bg-gray-900 mx-auto max-w-6xl lg:pt-44 pt-40 pb-56 flex-col align-center justify-center py-8 px-5 xl:px-0">
+          <div className="overflow-hidden  dark:bg-gray-900 mx-auto max-w-6xl lg:pt-44 lg:pb-44 pt-24 pb-24 flex-col align-center justify-center py-8 px-5 xl:px-0">
             <div className="relative xl:container m-auto px-6 md:px-12 lg:px-6">
               <div className="lg:flex">
-                <div className="relative mt-8 md:mt-16 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto text-center lg:text-left lg:mr-auto lg:w-7/12">
-                  <div className="flex ">
+                <div className="relative mt-8 md:mt-8 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto text-center lg:text-left lg:mr-auto lg:w-7/12">
+                  <div className="flex justify-center lg:justify-start">
                     <a
                       className="inline-flex items-center gap-x-2 bg-white border border-gray-200 text-sm text-gray-800 p-1 pl-3 rounded-full transition hover:border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:hover:border-gray-600 dark:text-gray-200"
                       href="https://github.com/beemdevelopment/aegis"
                       target="_blank"
                     >
-                      Check out our source code
+                      Check out the source code
                       <span className="py-2 px-3 inline-flex justify-center items-center gap-x-2 rounded-full bg-gray-200 font-semibold text-sm text-gray-600 dark:bg-gray-700 dark:text-gray-400">
                         <svg
                           className="w-2.5 h-2.5"
@@ -100,7 +101,7 @@ function App() {
                       </span>
                     </a>
                   </div>
-                  <h1 className="sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-blue-800 text-3xl text-center sm:text-5xl md:text-6xl lg:w-auto lg:text-left dark:text-white">
+                  <h1 className=" w-full mx-0  font-black text-transparant pb-2 text-3xl text-center sm:text-5xl md:text-6xl text-transparent rounded bg-clip-text caret-pink-600 bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-blue-800 via-blue-500 to-blue-300 lg:w-auto lg:text-left">
                     Aegis Authenticator
                   </h1>
                   <p className="sm:text-lg text-gray-700 dark:text-gray-300 lg:w-11/12">
@@ -114,11 +115,11 @@ function App() {
                     <a
                       aria-label="Download from Google Play Store"
                       href="#"
-                      className="p-4 border text-gray-700  hover:text-gray-700 border-gray-200 dark:bg-gray-800 dark:border-gray-700 rounded-full duration-300 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-600/20 dark:hover:border-cyan-300/30"
+                      className="p-4 border text-gray-700 hover:text-gray-700 border-gray-200 dark:bg-gray-800 dark:border-gray-700 rounded-full duration-300 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-600/20 dark:hover:border-cyan-300/30"
                     >
                       <div className="flex justify-center space-x-4">
                         <svg
-                          className=" fill-gray-700 mt-1"
+                          className=" fill-gray-700 dark:fill-white mt-1"
                           width="16"
                           height="16"
                           xmlns="http://www.w3.org/2000/svg"
@@ -143,7 +144,7 @@ function App() {
                     >
                       <div className="flex justify-center space-x-4">
                         <svg
-                          className="my-auto"
+                          className="my-auto fill-gray-700 dark:fill-white"
                           width="16"
                           height="16"
                           xmlns="http://www.w3.org/2000/svg"
@@ -156,18 +157,23 @@ function App() {
                         <span className="hidden font-medium md:block dark:text-white">F-Droid</span>
                       </div>
                     </a>
+                    <span className="block my-auto text-xs lg:text-sm text-slate-500 dark:text-white/50">
+                      433K+ installs
+                    </span>
                   </div>
                 </div>
-                <div className="mt-12 md:mt-0 lg:absolute -right-10 lg:w-1/3">
-                  <div className="relative w-full">
+                <div className="mt-12 md:mt-0 lg:absolute justify-center items-center -right-8 lg:w-1/3">
+                  <div className="relative h-[550px] overflow-hidden w-full">
                     <img
                       src={HeroScreenshot}
-                      className="relative "
+                      className="relative mx-auto overflow-hidden"
                       alt="wath illustration"
                       loading="lazy"
                       width="320"
                       height="280"
                     />
+                    <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-white dark:from-gray-900"></div>
+                    <div className="bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-white dark:from-gray-900"></div>
                   </div>
                 </div>
               </div>

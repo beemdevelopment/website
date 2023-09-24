@@ -16,9 +16,9 @@ function ReviewRow({ reviews }: ReviewRowProps) {
           {reviews.map((review, i) => (
             <div
               key={i}
-              className="flex md:w-[600px] w-[300px] sm:w-full  h-auto m-2 flex-col rounded-3xl p-12 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 relative"
+              className="flex md:w-[600px] w-[300px] sm:w-full  h-auto m-2 flex-col rounded-3xl p-12 ring-1 ring-neutral-950/5 dark:ring-neutral-300/5 transition hover:bg-neutral-50 dark:hover:bg-gray-800/30 relative"
             >
-              <p className="description tracking-tight text-slate-900 before:content-['“'] after:content-['”']">
+              <p className="description tracking-tight text-slate-900 dark:text-gray-300 before:content-['“'] after:content-['”']">
                 {review.text}
               </p>
 

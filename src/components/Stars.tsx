@@ -11,7 +11,7 @@ function Stars({ stars }: StarProps) {
             <svg
               key={i}
               className={`mr-1 w-4 h-4 fill-current ${
-                stars > i ? "text-yellow-500" : "text-gray-400"
+                stars > i ? "text-blue-500" : "text-gray-400"
               }`}
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"

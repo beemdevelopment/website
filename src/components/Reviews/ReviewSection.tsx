@@ -14,9 +14,15 @@ function ReviewSection() {
   //const thirdRow = reviewList.slice(2 * oneThird);
 
   return (
-    <div className="bg-white">
-      <div className="overflow-hidden bg-white dark:bg-gray-900 mx-auto max-w-6xl lg:pt-44 pt-40 pb-56 flex-col align-center justify-center py-8 px-5 xl:px-0">
-        <div className="relative flex items-center">
+    <div className=" ">
+      <div className="overflow-hidden  mx-auto max-w-6xl lg:pt-16 pt-40 pb-56 flex-col align-center justify-center py-8 px-5 xl:px-0">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="text-3xl font-bold tracking-tight  ">What our users have to say</h2>
+          <p className="mt-4 text-lg text-gray-500">
+            We compiled a list of reviews from our Google Play listing
+          </p>
+        </div>
+        <div className="relative flex items-center mt-12">
           <div className="relative flex max-w-[100vw] overflow-hidden">
             <div className="absolute top-0 bottom-0 left-0 w-[200px] pointer-events-none z-50 bg-gradient-to-r from-white dark:from-gray-900"></div>
             <div className="animate-loop-50s flex w-max items-stretch gap-[--gap] [--gap:theme(spacing.5)] hover:[animation-play-state:paused]">
