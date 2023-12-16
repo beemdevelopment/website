@@ -8,6 +8,12 @@ function ReviewSection() {
   const reviewList = [...reviews].sort(() => Math.random() - 0.5);
   const fraction = Math.ceil(reviewList.length / 2);
 
+  reviewList.forEach((review) => {
+    review.text = review.highlights.reduce((acc, phrase) => {
+      return acc.replace(phrase, `<span class="bg-blue-200 dark:bg-blue-800">${phrase}</span>`);
+    }, review.text);
+  });
+
   const firstRow = reviewList.slice(0, fraction);
   const secondRow = reviewList.slice(fraction);
   //const secondRow = reviewList.slice(oneThird, 2 * oneThird);
