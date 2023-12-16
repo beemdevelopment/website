@@ -1,6 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@headlessui/react': ^1.7.17
+  '@heroicons/react': ^2.0.18
   '@types/react': ^18.2.15
   '@types/react-dom': ^18.2.7
   '@typescript-eslint/eslint-plugin': ^6.0.0
@@ -20,6 +22,8 @@ specifiers:
   vite: ^4.4.5
 
 dependencies:
+  '@headlessui/react': 1.7.17_biqbaboplfbrettd7655fr4n2y
+  '@heroicons/react': 2.0.18_react@18.2.0
   dayjs: 1.11.10
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -511,6 +515,26 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
+  /@headlessui/react/1.7.17_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-4am+tzvkqDSSgiwrsEpGWqgGo9dz8qU5M3znCkC4PgkpY4HcCZzEDEvozltGGGHIKl9jbXbZPSH5TWn4sWJdow==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: ^16 || ^17 || ^18
+      react-dom: ^16 || ^17 || ^18
+    dependencies:
+      client-only: 0.0.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@heroicons/react/2.0.18_react@18.2.0:
+    resolution: {integrity: sha512-7TyMjRrZZMBPa+/5Y8lN0iyvUU/01PeMGX2+RE7cQWpEUIcb4QotzUObFkJDejj/HUH4qjP/eQ0gzzKs2f+6Yw==}
+    peerDependencies:
+      react: '>= 16'
+    dependencies:
+      react: 18.2.0
+    dev: false
+
   /@humanwhocodes/config-array/0.11.11:
     resolution: {integrity: sha512-N2brEuAadi0CcdeMXUkhbZB84eskAc8MEX1By6qEchoVywSgXPIjou4rYsl0V3Hj0ZnuGycGCjdNgockbzeWNA==}
     engines: {node: '>=10.10.0'}
@@ -920,6 +944,10 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
+
+  /client-only/0.0.1:
+    resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
+    dev: false
 
   /color-convert/1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}

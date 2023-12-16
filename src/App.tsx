@@ -75,6 +75,24 @@ function App() {
         <div className="absolute top-0 h-[1200px] pointer-events-none w-screen bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)]"></div>
         <div className="">
           <div className="overflow-hidden xl:overflow-visible  dark:bg-gray-900 mx-auto max-w-6xl lg:pt-44 lg:pb-44 pt-24 pb-24 flex-col align-center justify-center py-8 px-5 xl:px-0">
+            <svg
+              className="absolute inset-0 -z-10 h-full w-full stroke-white/5 [mask-image:radial-gradient(75%_50%_at_top_center,white,transparent)]"
+              aria-hidden="true"
+            >
+              <defs>
+                <pattern
+                  id="hero"
+                  width="80"
+                  height="80"
+                  x="50%"
+                  y="-1"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <path d="M.5 200V.5H200" fill="none"></path>
+                </pattern>
+              </defs>
+              <rect width="100%" height="100%" stroke-width="0" fill="url(#hero)"></rect>
+            </svg>
             <div className="relative xl:container m-auto px-6 md:px-12 lg:px-6">
               <div className="lg:flex">
                 <div className="relative mt-8 md:mt-8 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto text-center lg:text-left lg:mr-auto lg:w-7/12">
@@ -103,7 +121,7 @@ function App() {
                       </span>
                     </a>
                   </div>
-                  <h1 className=" w-full mx-0  font-black text-transparant pb-2 text-3xl text-center sm:text-5xl md:text-6xl text-transparent rounded bg-clip-text caret-pink-600 bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-blue-800 via-blue-500 to-blue-300 lg:w-auto lg:text-left">
+                  <h1 className=" w-full mx-0  font-black text-transparant pb-2 text-3xl text-center sm:text-5xl md:text-6xl text-transparent rounded bg-clip-text caret-pink-600 bg-blue-500 lg:w-auto lg:text-left">
                     Aegis Authenticator
                   </h1>
                   <p className="sm:text-lg text-gray-700 dark:text-gray-300 lg:w-11/12">
@@ -165,6 +183,40 @@ function App() {
                   </div>
                 </div>
                 <div className="mt-12 md:mt-0 lg:absolute justify-center items-center -right-8 lg:w-1/3">
+                  <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+                    <svg
+                      viewBox="0 0 558 558"
+                      width="500"
+                      height="500"
+                      fill="none"
+                      aria-hidden="true"
+                      className="animate-spin-slow "
+                    >
+                      <defs>
+                        <linearGradient
+                          id=":Rddaqlla:"
+                          x1="79"
+                          y1="16"
+                          x2="105"
+                          y2="237"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#13B5C8"></stop>
+                          <stop offset="1" stop-color="#13B5C8" stop-opacity="0"></stop>
+                        </linearGradient>
+                      </defs>
+                      <path
+                        opacity=".2"
+                        d="M1 279C1 125.465 125.465 1 279 1s278 124.465 278 278-124.465 278-278 278S1 432.535 1 279Z"
+                        stroke="#13B5C8"
+                      ></path>
+                      <path
+                        d="M1 279C1 125.465 125.465 1 279 1"
+                        stroke="url(#:Rddaqlla:)"
+                        stroke-linecap="round"
+                      ></path>
+                    </svg>
+                  </div>
                   <div className="relative h-[550px] overflow-hidden w-full">
                     <img
                       src={HeroScreenshot}
