@@ -31,7 +31,7 @@ function classNames(...classes: string[]) {
 export default function Faq() {
   return (
     <div className="">
-      <div className="mx-auto max-w-7xl py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
+      <div className="overflow-hidden mx-auto max-w-6xl flex-col align-center justify-center px-5 xl:px-0 pb-12 pt-12 lg:py-32">
         <div className="mx-auto max-w-3xl divide-y-2 divide-slate-200 dark:divide-gray-700">
           <h2 className="text-3xl text-center  font-bold tracking-tight  ">
             Frequently asked questions

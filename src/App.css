@@ -6,7 +6,3 @@ a {
     color: inherit;
     text-decoration: inherit;
 }
-
-.animate-spin-slow {
-    animation: spin 5s linear infinite;
-}

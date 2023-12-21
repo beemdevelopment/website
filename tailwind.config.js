@@ -13,6 +13,7 @@ export default {
 
         "loop-60s": "loop 60s linear infinite",
         "loop-50s": "loop 50s linear infinite",
+        "spin-slow": "spin 5s linear infinite"
       },
 
       keyframes: {

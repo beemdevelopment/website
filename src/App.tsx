@@ -8,7 +8,7 @@ import QRCode from "react-qr-code";
 function App() {
   return (
     <>
-      <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-300 pb-28">
+      <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-300">
         <header>
           <input
             type="checkbox"
@@ -18,37 +18,37 @@ function App() {
             hidden
             aria-hidden="true"
           />
-          <nav className="fixed z-20 w-full bg-white/20 dark:bg-gray-900/80 backdrop-blur navbar shadow-2xl shadow-gray-600/5 border-b border-gray-100 dark:border-gray-800 peer-checked:navbar-active dark:shadow-none">
+          <nav className="fixed z-30 w-full bg-white/20 dark:bg-gray-900/80 backdrop-blur navbar shadow-2xl shadow-gray-600/5 border-b border-gray-100 dark:border-gray-800 peer-checked:navbar-active dark:shadow-none">
             <div className="max-w-6xl m-auto px-6 md:px-12 lg:px-6">
-              <div className="flex flex-wrap items-center justify-between gap-6 md:py-3 md:gap-0 lg:py-5">
+              <div className="flex flex-wrap items-center justify-between gap-6 py-3 md:gap-0 lg:py-5">
                 <div className="w-full items-center flex justify-between lg:w-auto">
-                  <a className="relative z-10 w-10" href="#" aria-label="logo">
+                  <a className="relative z-10 w-10 mx-auto md:mx-0" href="#" aria-label="logo">
                     <img src="/assets/icon.png" />
                   </a>
                 </div>
                 <div className="navmenu hidden w-full flex-wrap justify-end items-center mb-16 space-y-8 p-6 border border-gray-100 rounded-3xl shadow-2xl shadow-gray-300/20 bg-white dark:bg-gray-800 lg:space-y-0 lg:p-0 lg:m-0 lg:flex md:flex-nowrap lg:bg-transparent lg:w-7/12 lg:shadow-none dark:shadow-none dark:border-gray-700 lg:border-0">
                   <div className="text-gray-600 dark:text-gray-300 lg:pr-4">
-                    <ul className="space-y-6 tracking-wide font-medium dark:text-gray text-base lg:text-sm lg:flex lg:space-y-0">
+                    <ul className="space-y-6 tracking-wide font-medium dark:text-gray text-base lg:text-sm lg:flex lg:space-y-0 ">
                       <li>
                         <a
-                          href="#"
-                          className="block md:px-4 transition hover:text-primary dark:hover:text-primaryLight"
+                          href="#features"
+                          className="block md:px-4 transition text-gray-700 dark:text-gray-300"
                         >
                           <span>Features</span>
                         </a>
                       </li>
                       <li>
                         <a
-                          href="#"
-                          className="block  md:px-4 transition hover:text-primary dark:hover:text-primaryLight"
+                          href="#reviews"
+                          className="block  md:px-4 transition text-gray-700 dark:text-gray-300"
                         >
                           <span>Reviews</span>
                         </a>
                       </li>
                       <li>
                         <a
-                          href="#"
-                          className="block md:px-4 transition hover:text-primary dark:hover:text-primaryLight"
+                          href="#faq"
+                          className="block md:px-4 transition text-gray-700 dark:text-gray-300"
                         >
                           <span>FAQ</span>
                         </a>
@@ -72,7 +72,7 @@ function App() {
           </nav>
         </header>
 
-        <div className="absolute top-0 h-[1200px] pointer-events-none w-screen bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)]"></div>
+        <div className="absolute top-0 h-[1200px] pointer-events-none w-screen bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.22)_0,rgba(0,163,255,0.0)_50%,rgba(0,163,255,0)_100%)]"></div>
         <div className="">
           <div className="overflow-hidden xl:overflow-visible  dark:bg-gray-900 mx-auto max-w-6xl lg:pt-44 lg:pb-44 pt-24 pb-24 flex-col align-center justify-center py-8 px-5 xl:px-0">
             <svg
@@ -91,7 +91,7 @@ function App() {
                   <path d="M.5 200V.5H200" fill="none"></path>
                 </pattern>
               </defs>
-              <rect width="100%" height="100%" stroke-width="0" fill="url(#hero)"></rect>
+              <rect width="100%" height="100%" strokeWidth="0" fill="url(#hero)"></rect>
             </svg>
             <div className="relative xl:container m-auto px-6 md:px-12 lg:px-6">
               <div className="lg:flex">
@@ -134,8 +134,9 @@ function App() {
                   <div className="grid grid-cols-3 space-x-4 md:space-x-6 md:flex md:justify-center lg:justify-start">
                     <a
                       aria-label="Download from Google Play Store"
-                      href="#"
-                      className="p-4 border text-gray-700 hover:text-gray-700 border-gray-200 dark:bg-gray-800 dark:border-gray-700 rounded-full duration-300 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-600/20 dark:hover:border-cyan-300/30"
+                      target="about:blank"
+                      href="https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis"
+                      className="p-4 px-6 border text-gray-700 hover:text-gray-700 border-gray-200 dark:bg-gray-800 dark:border-gray-700 rounded-full duration-300 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-600/20 dark:hover:border-cyan-300/30"
                     >
                       <div className="flex justify-center space-x-4">
                         <svg
@@ -159,7 +160,8 @@ function App() {
                     </a>
                     <a
                       aria-label="Download from F-Droid"
-                      href="#"
+                      target="about:blank"
+                      href="https://f-droid.org/packages/com.beemdevelopment.aegis"
                       className="p-4 border border-gray-200 text-gray-700  hover:text-gray-700 dark:bg-gray-800  dark:border-gray-700 rounded-full duration-300 hover:border-green-400 hover:shadow-lg hover:shadow-lime-600/20 dark:hover:border-green-300/30"
                     >
                       <div className="flex justify-center space-x-4">
@@ -178,19 +180,19 @@ function App() {
                       </div>
                     </a>
                     <span className="block my-auto text-xs lg:text-sm text-slate-500 dark:text-white/50">
-                      433K+ installs
+                      487K+ installs
                     </span>
                   </div>
                 </div>
-                <div className="mt-12 md:mt-0 lg:absolute justify-center items-center -right-8 lg:w-1/3">
-                  <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+                <div className="mt-12 lg:mt-0 lg:absolute justify-center items-center -right-8 lg:w-1/3">
+                  <div className="absolute lg:mt-0 mt-52 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                     <svg
                       viewBox="0 0 558 558"
                       width="500"
                       height="500"
                       fill="none"
                       aria-hidden="true"
-                      className="animate-spin-slow "
+                      className="animate-spin-slow lg:hidden sm:block xl:block"
                     >
                       <defs>
                         <linearGradient
@@ -201,8 +203,8 @@ function App() {
                           y2="237"
                           gradientUnits="userSpaceOnUse"
                         >
-                          <stop stop-color="#13B5C8"></stop>
-                          <stop offset="1" stop-color="#13B5C8" stop-opacity="0"></stop>
+                          <stop stopColor="#13B5C8"></stop>
+                          <stop offset="1" stopColor="#13B5C8" stopOpacity="0"></stop>
                         </linearGradient>
                       </defs>
                       <path
@@ -213,7 +215,7 @@ function App() {
                       <path
                         d="M1 279C1 125.465 125.465 1 279 1"
                         stroke="url(#:Rddaqlla:)"
-                        stroke-linecap="round"
+                        strokeLinecap="round"
                       ></path>
                     </svg>
                   </div>
@@ -230,7 +232,7 @@ function App() {
                     <div className="bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-white dark:from-gray-900"></div>
                   </div>
                 </div>
-                <div className="hidden p-3 ring-1 ring-neutral-950/25 rounded-lg xl:block xl:absolute  bg-white shadow-lg z-10 top-32 -right-10">
+                <div className="hidden p-3 ring-1 ring-neutral-950/25 rounded-lg xl:block xl:absolute bg-white shadow-lg z-10 top-32 -right-10">
                   <div
                     className=""
                     style={{ height: "auto", margin: "0 auto", maxWidth: 64, width: "100%" }}
@@ -248,11 +250,114 @@ function App() {
           </div>
         </div>
 
+        <p>
+          <a id="features"></a>
+        </p>
         <Features></Features>
 
+        <p>
+          <a id="reviews"></a>
+        </p>
         <ReviewSection></ReviewSection>
 
+        <section
+          id="get-free-shares-today"
+          className="relative overflow-hidden bg-gray-900 dark:bg-gray-950 py-12 sm:py-28 md:py-12"
+        >
+          <div className="absolute top-1/2 left-20 z-0 -translate-y-1/2 sm:left-1/2 sm:-translate-x-1/2">
+            <svg
+              viewBox="0 0 558 558"
+              width="500"
+              height="500"
+              fill="none"
+              aria-hidden="true"
+              className="animate-spin-slow lg:hidden sm:block xl:block"
+            >
+              <defs>
+                <linearGradient
+                  id=":Rddaqlla:"
+                  x1="79"
+                  y1="16"
+                  x2="105"
+                  y2="237"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stopColor="#13B5C8"></stop>
+                  <stop offset="1" stopColor="#13B5C8" stopOpacity="0"></stop>
+                </linearGradient>
+              </defs>
+              <path
+                opacity=".2"
+                d="M1 279C1 125.465 125.465 1 279 1s278 124.465 278 278-124.465 278-278 278S1 432.535 1 279Z"
+                stroke="#13B5C8"
+              ></path>
+              <path
+                d="M1 279C1 125.465 125.465 1 279 1"
+                stroke="url(#:Rddaqlla:)"
+                strokeLinecap="round"
+              ></path>
+            </svg>
+          </div>
+          <div className="overflow-hidden mx-auto max-w-6xl flex-col align-center justify-center px-5 xl:px-0">
+            <div className="mx-auto max-w-md sm:text-center">
+              <h2 className="text-3xl font-medium tracking-tight text-white sm:text-4xl">
+                Get started
+              </h2>
+              <p className="mt-4 text-lg text-gray-300">
+                Download the app and start adding your 2FA tokens to your vault and improve your
+                online security.
+              </p>
+              <div className="mt-8 flex justify-center">
+                <a
+                  aria-label="Download from Google Play Store"
+                  target="about:blank"
+                  href="https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis"
+                  className="p-4 border z-10 cursor-pointer bg-gray-200 text-gray-700 hover:text-gray-700 border-gray-200 dark:bg-gray-800 dark:border-gray-700 rounded-full duration-300 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-600/20 dark:hover:border-cyan-300/30"
+                >
+                  <div className="flex justify-center space-x-4">
+                    <svg
+                      className=" fill-gray-700 dark:fill-white mt-1"
+                      width="16"
+                      height="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                    >
+                      <path
+                        fill="current-color"
+                        d="M1.571 23.664l10.531-10.501 3.712 3.701-12.519 6.941c-.476.264-1.059.26-1.532-.011l-.192-.13zm9.469-11.56l-10.04 10.011v-20.022l10.04 10.011zm6.274-4.137l4.905 2.719c.482.268.781.77.781 1.314s-.299 1.046-.781 1.314l-5.039 2.793-4.015-4.003 4.149-4.137zm-15.854-7.534c.09-.087.191-.163.303-.227.473-.271 1.056-.275 1.532-.011l12.653 7.015-3.846 3.835-10.642-10.612z"
+                      />
+                    </svg>
+                    <span className="hidden font-medium md:block dark:text-white">
+                      Google Play Store
+                    </span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <p>
+          <a id="faq"></a>
+        </p>
         <Faq></Faq>
+
+        <footer className="border-t border-gray-200">
+          <div className="overflow-hidden mx-auto max-w-6xl flex-col align-center justify-center px-5 xl:px-0">
+            <div className="flex flex-col items-center border-t border-gray-200 pt-8 pb-12 md:flex-row-reverse md:justify-between md:pt-6">
+              <form className="flex w-full justify-center md:w-auto">
+                <a href="aegis/privacy.html" className="block hover:underline transition text-sm">
+                  <span>Privacy Policy</span>
+                </a>
+              </form>
+              <p className="mt-6 text-sm text-gray-500 md:mt-0">
+                &copy; Copyright 2023 Beem Development, all rights reserved.
+              </p>
+            </div>
+          </div>
+        </footer>
       </div>
     </>
   );
