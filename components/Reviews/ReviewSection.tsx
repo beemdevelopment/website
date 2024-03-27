@@ -5,7 +5,8 @@ import ReviewRow from "./ReviewRow";
 dayjs.extend(relativeTime);
 
 function ReviewSection() {
-  const reviewList = [...reviews].sort(() => Math.random() - 0.5);
+  // NOTE: Randomizing the review list breaks hydration
+  const reviewList = [...reviews] //.sort(() => Math.random() - 0.5);
   const fraction = Math.ceil(reviewList.length / 2);
 
   reviewList.forEach((review) => {

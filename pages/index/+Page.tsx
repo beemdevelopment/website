@@ -1,11 +1,15 @@
 import "./App.css";
-import HeroScreenshot from "./assets/screenshots/hero.png";
-import Faq from "./components/Faq";
-import Features from "./components/Features";
-import ReviewSection from "./components/Reviews/ReviewSection";
-import QRCode from "react-qr-code";
+import HeroScreenshot from "../../assets/screenshots/hero.png";
+import Faq from "../../components/Faq";
+import Features from "../../components/Features";
+import ReviewSection from "../../components/Reviews/ReviewSection";
 
-function App() {
+// @ts-ignore
+import { QRCode } from "react-qr-code";
+
+export { Page }
+
+function Page() {
   return (
     <>
       <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-300">
@@ -242,7 +246,7 @@ function App() {
                       style={{ height: "auto", maxWidth: "100%", width: "100%" }}
                       value="https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis"
                       viewBox={`0 0 256 256`}
-                    />
+                      />
                   </div>
                 </div>
               </div>
@@ -360,7 +364,5 @@ function App() {
         </footer>
       </div>
     </>
-  );
+  )
 }
-
-export default App;
