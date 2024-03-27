@@ -5,17 +5,18 @@ import relativeTime from "dayjs/plugin/relativeTime";
 dayjs.extend(relativeTime);
 
 type ReviewRowProps = {
+  rowId: String
   reviews: Review[];
 };
 
-function ReviewRow({ reviews }: ReviewRowProps) {
+function ReviewRow({ rowId, reviews }: ReviewRowProps) {
   return (
     <>
-      {[...Array(2)].map(() => (
+      {[...Array(2)].map((_1, i, _2) => (
         <>
-          {reviews.map((review, i) => (
+          {reviews.map((review, j) => (
             <div
-              key={`review-${i}`}
+              key={`review-${rowId}-${i}-${j}`}
               className="flex md:w-[600px] w-[80vw] sm:w-full  h-auto m-2 flex-col rounded-3xl p-12 ring-1 ring-neutral-950/5 dark:ring-neutral-300/5 transition hover:bg-neutral-50 dark:hover:bg-gray-800/30 relative"
             >
               <div

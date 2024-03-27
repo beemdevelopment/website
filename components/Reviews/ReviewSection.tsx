@@ -33,7 +33,7 @@ function ReviewSection() {
           <div className="relative flex max-w-[100vw] overflow-hidden">
             <div className="absolute top-0 bottom-0 left-0 w-[200px] pointer-events-none z-20 bg-gradient-to-r from-white dark:from-gray-900"></div>
             <div className="animate-loop-50s flex w-max items-stretch gap-[--gap] [--gap:theme(spacing.5)] hover:[animation-play-state:paused]">
-              <ReviewRow reviews={firstRow}></ReviewRow>
+              <ReviewRow rowId="0" reviews={firstRow}></ReviewRow>
             </div>
             <div className="absolute top-0 bottom-0 right-0 w-[200px] pointer-events-none z-20 bg-gradient-to-l from-white dark:from-gray-900"></div>
           </div>
@@ -42,7 +42,7 @@ function ReviewSection() {
           <div className="relative flex max-w-[100vw] overflow-hidden">
             <div className="absolute top-0 bottom-0 left-0 w-[200px] pointer-events-none z-20 bg-gradient-to-r from-white dark:from-gray-900"></div>
             <div className="animate-loop-60s mt-4 flex w-max items-stretch gap-[--gap] [--gap:theme(spacing.5)] hover:[animation-play-state:paused]">
-              <ReviewRow reviews={secondRow}></ReviewRow>
+              <ReviewRow rowId="1" reviews={secondRow}></ReviewRow>
             </div>
             <div className="absolute top-0 bottom-0 right-0 w-[200px] pointer-events-none z-20 bg-gradient-to-l from-white dark:from-gray-900"></div>
           </div>
