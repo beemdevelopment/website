@@ -1,7 +1,0 @@
-baseURL = 'https://getaegis.app/'
-languageCode = 'en-us'
-title = 'Aegis Authenticator - Secure 2FA app for Android'
-disableKinds = ["RSS", "sitemap", "taxonomy"]
-disableHugoGeneratorInject = true
-ignoreErrors = ["error-disable-taxonomy"]
-relativeURLs = true
