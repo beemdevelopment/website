@@ -7,21 +7,13 @@ import ReviewSection from "../../components/Reviews/ReviewSection";
 // @ts-ignore
 import { QRCode } from "react-qr-code";
 
-export { Page }
+export { Page };
 
 function Page() {
   return (
     <>
       <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-300">
         <header>
-          <input
-            type="checkbox"
-            name="hbr"
-            id="hbr"
-            className="hbr peer"
-            hidden
-            aria-hidden="true"
-          />
           <nav className="fixed z-30 w-full bg-white/20 dark:bg-gray-900/80 backdrop-blur navbar shadow-2xl shadow-gray-600/5 border-b border-gray-100 dark:border-gray-800 peer-checked:navbar-active dark:shadow-none">
             <div className="max-w-6xl m-auto px-6 md:px-12 lg:px-6">
               <div className="flex flex-wrap items-center justify-between gap-6 py-3 md:gap-0 lg:py-5">
@@ -30,7 +22,7 @@ function Page() {
                     <img src="/assets/icon.png" />
                   </a>
                 </div>
-                <div className="navmenu hidden w-full flex-wrap justify-end items-center mb-16 space-y-8 p-6 border border-gray-100 rounded-3xl shadow-2xl shadow-gray-300/20 bg-white dark:bg-gray-800 lg:space-y-0 lg:p-0 lg:m-0 lg:flex md:flex-nowrap lg:bg-transparent lg:w-7/12 lg:shadow-none dark:shadow-none dark:border-gray-700 lg:border-0">
+                <div className="navmenu hidden w-full flex-wrap justify-end items-center mb-16 space-y-8 p-6 border border-gray-100 rounded-3xl shadow-2xl shadow-gray-300/20 bg-white lg:space-y-0 lg:p-0 lg:m-0 lg:flex md:flex-nowrap lg:bg-transparent lg:w-7/12 lg:shadow-none dark:shadow-none dark:border-gray-700 lg:border-0">
                   <div className="text-gray-600 dark:text-gray-300 lg:pr-4">
                     <ul className="space-y-6 tracking-wide font-medium dark:text-gray text-base lg:text-sm lg:flex lg:space-y-0 ">
                       <li>
@@ -133,7 +125,7 @@ function Page() {
                     your 2-step verification tokens for your online services.
                   </p>
                   <span className="block font-semibold text-gray-500 dark:text-gray-400">
-                    The most trusted 2 factor app for your phone.
+                    Secure, simple and actively developed.
                   </span>
                   <div className="grid grid-cols-3 space-x-4 md:space-x-6 md:flex md:justify-center lg:justify-start">
                     <a
@@ -184,7 +176,7 @@ function Page() {
                       </div>
                     </a>
                     <span className="block my-auto text-xs lg:text-sm text-slate-500 dark:text-white/50">
-                      487K+ installs
+                      589K+ installs
                     </span>
                   </div>
                 </div>
@@ -246,7 +238,7 @@ function Page() {
                       style={{ height: "auto", maxWidth: "100%", width: "100%" }}
                       value="https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis"
                       viewBox={`0 0 256 256`}
-                      />
+                    />
                   </div>
                 </div>
               </div>
@@ -264,11 +256,8 @@ function Page() {
         </p>
         <ReviewSection></ReviewSection>
 
-        <section
-          id="get-free-shares-today"
-          className="relative overflow-hidden bg-gray-900 dark:bg-gray-950 py-12 sm:py-28 md:py-12"
-        >
-          <div className="absolute top-1/2 left-20 z-0 -translate-y-1/2 sm:left-1/2 sm:-translate-x-1/2">
+        <section className="relative overflow-hidden bg-gray-900 dark:bg-gray-950 py-12 sm:py-28 md:py-12">
+          <div className="absolute top-1/2 left-20 -translate-y-1/2 sm:left-1/2 sm:-translate-x-1/2">
             <svg
               viewBox="0 0 558 558"
               width="500"
@@ -302,7 +291,7 @@ function Page() {
               ></path>
             </svg>
           </div>
-          <div className="overflow-hidden mx-auto max-w-6xl flex-col align-center justify-center px-5 xl:px-0">
+          <div className="overflow-hidden mx-auto max-w-6xl flex-col align-center justify-center px-5 xl:px-0 relative">
             <div className="mx-auto max-w-md sm:text-center">
               <h2 className="text-3xl font-medium tracking-tight text-white sm:text-4xl">
                 Get started
@@ -318,7 +307,7 @@ function Page() {
                   href="https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis"
                   className="p-4 border z-10 cursor-pointer bg-gray-200 text-gray-700 hover:text-gray-700 border-gray-200 dark:bg-gray-800 dark:border-gray-700 rounded-full duration-300 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-600/20 dark:hover:border-cyan-300/30"
                 >
-                  <div className="flex justify-center space-x-4">
+                  <div className="flex justify-center space-x-4 -z-10">
                     <svg
                       className=" fill-gray-700 dark:fill-white mt-1"
                       width="16"
@@ -348,9 +337,9 @@ function Page() {
         </p>
         <Faq></Faq>
 
-        <footer className="border-t border-gray-200">
+        <footer className="border-t border-gray-200 dark:border-gray-800">
           <div className="overflow-hidden mx-auto max-w-6xl flex-col align-center justify-center px-5 xl:px-0">
-            <div className="flex flex-col items-center border-t border-gray-200 pt-8 pb-12 md:flex-row-reverse md:justify-between md:pt-6">
+            <div className="flex flex-col items-center pt-8 pb-12 md:flex-row-reverse md:justify-between md:pt-6">
               <form className="flex w-full justify-center md:w-auto">
                 <a href="aegis/privacy.html" className="block hover:underline transition text-sm">
                   <span>Privacy Policy</span>
@@ -364,5 +353,5 @@ function Page() {
         </footer>
       </div>
     </>
-  )
+  );
 }

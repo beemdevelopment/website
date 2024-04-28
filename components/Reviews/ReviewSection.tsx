@@ -1,24 +1,35 @@
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
-import { reviews } from "../../data/reviews";
+import { Review, reviews } from "../../data/reviews";
 import ReviewRow from "./ReviewRow";
+import React from "react";
 dayjs.extend(relativeTime);
 
 function ReviewSection() {
-  // NOTE: Randomizing the review list breaks hydration
-  const reviewList = [...reviews] //.sort(() => Math.random() - 0.5);
+  const [hydrated, setHydrated] = React.useState(false);
+  React.useEffect(() => {
+    setHydrated(true);
+  }, []);
+
+  const reviewList = !hydrated ? [...reviews] : [...reviews].sort(() => Math.random() - 0.5);
+  const shownReviews: Review[] = [];
   const fraction = Math.ceil(reviewList.length / 2);
 
   reviewList.forEach((review) => {
-    review.text = review.highlights.reduce((acc, phrase) => {
-      return acc.replace(phrase, `<span class="bg-blue-200 dark:bg-blue-800">${phrase}</span>`);
-    }, review.text);
+    const clone = structuredClone(review);
+
+    review.highlights.forEach((phrase) => {
+      clone.text = clone.text.replace(
+        phrase,
+        `<span class="bg-blue-200 dark:bg-blue-800">${phrase}</span>`
+      );
+    });
+
+    shownReviews.push(clone);
   });
 
-  const firstRow = reviewList.slice(0, fraction);
-  const secondRow = reviewList.slice(fraction);
-  //const secondRow = reviewList.slice(oneThird, 2 * oneThird);
-  //const thirdRow = reviewList.slice(2 * oneThird);
+  const firstRow = shownReviews.slice(0, fraction);
+  const secondRow = shownReviews.slice(fraction);
 
   return (
     <div className=" ">
@@ -47,13 +58,6 @@ function ReviewSection() {
             <div className="absolute top-0 bottom-0 right-0 w-[200px] pointer-events-none z-20 bg-gradient-to-l from-white dark:from-gray-900"></div>
           </div>
         </div>
-        {/* <div className="relative flex w-screen items-center">
-          <div className="relative flex max-w-[100vw] overflow-hidden">
-            <div className="animate-loop-22s flex w-max items-stretch gap-[--gap] [--gap:theme(spacing.5)] hover:[animation-play-state:paused]">
-              <ReviewRow reviews={thirdRow}></ReviewRow>
-            </div>
-          </div>
-        </div> */}
       </div>
     </div>
   );

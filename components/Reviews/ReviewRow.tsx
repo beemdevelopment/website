@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { Review } from "../../data/reviews";
 import Stars from "../Stars";
 import dayjs from "dayjs";
@@ -5,7 +6,7 @@ import relativeTime from "dayjs/plugin/relativeTime";
 dayjs.extend(relativeTime);
 
 type ReviewRowProps = {
-  rowId: String
+  rowId: String;
   reviews: Review[];
 };
 
@@ -13,7 +14,7 @@ function ReviewRow({ rowId, reviews }: ReviewRowProps) {
   return (
     <>
       {[...Array(2)].map((_1, i, _2) => (
-        <>
+        <Fragment key={i}>
           {reviews.map((review, j) => (
             <div
               key={`review-${rowId}-${i}-${j}`}
@@ -23,12 +24,11 @@ function ReviewRow({ rowId, reviews }: ReviewRowProps) {
                 className="description tracking-tight text-slate-900 dark:text-gray-300 before:content-['“'] after:content-['”']"
                 dangerouslySetInnerHTML={{ __html: review.text }}
               ></div>
-
               <Stars stars={review.stars} />
               <p className="text-sm text-gray-500">{dayjs(review.date).fromNow()}</p>
             </div>
           ))}
-        </>
+        </Fragment>
       ))}
     </>
   );
