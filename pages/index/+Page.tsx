@@ -1,5 +1,6 @@
 import "./App.css";
 import HeroScreenshot from "../../assets/screenshots/hero.png";
+import Icon from "../../assets/icon.png";
 import Faq from "../../components/Faq";
 import Features from "../../components/Features";
 import ReviewSection from "../../components/Reviews/ReviewSection";
@@ -19,7 +20,7 @@ function Page() {
               <div className="flex flex-wrap items-center justify-between gap-6 py-3 md:gap-0 lg:py-5">
                 <div className="w-full items-center flex justify-between lg:w-auto">
                   <a className="relative z-10 w-10 mx-auto md:mx-0" href="#" aria-label="logo">
-                    <img src="/assets/icon.png" />
+                    <img src={Icon} />
                   </a>
                 </div>
                 <div className="navmenu hidden w-full flex-wrap justify-end items-center mb-16 space-y-8 p-6 border border-gray-100 rounded-3xl shadow-2xl shadow-gray-300/20 bg-white lg:space-y-0 lg:p-0 lg:m-0 lg:flex md:flex-nowrap lg:bg-transparent lg:w-7/12 lg:shadow-none dark:shadow-none dark:border-gray-700 lg:border-0">
@@ -341,7 +342,7 @@ function Page() {
           <div className="overflow-hidden mx-auto max-w-6xl flex-col align-center justify-center px-5 xl:px-0">
             <div className="flex flex-col items-center pt-8 pb-12 md:flex-row-reverse md:justify-between md:pt-6">
               <form className="flex w-full justify-center md:w-auto">
-                <a href="aegis/privacy.html" className="block hover:underline transition text-sm">
+                <a href="privacy" className="block hover:underline transition text-sm">
                   <span>Privacy Policy</span>
                 </a>
               </form>
