@@ -19,8 +19,6 @@ const onRenderHtml: OnRenderHtmlAsync = async (pageContext): ReturnType<OnRender
   );
 
   // See https://vike.dev/head
-  const { documentProps } = pageContext.exports;
-
   const documentHtml = escapeInject`<!DOCTYPE html>
     <html lang="en">
     <head>
