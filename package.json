@@ -1,4 +1,6 @@
 {
+  "name": "aegis-website",
+  "version": "0.0.0",
   "scripts": {
     "dev": "npm run server:dev",
     "prod": "npm run lint && npm run build && npm run server:prod",
