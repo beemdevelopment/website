@@ -349,7 +349,7 @@ function Page() {
                 </a>
               </form>
               <p className="mt-6 text-sm text-gray-500 md:mt-0">
-                &copy; Copyright 2024 Beem Development, all rights reserved.
+                &copy; Copyright 2025 Beem Development, all rights reserved.
               </p>
             </div>
           </div>
