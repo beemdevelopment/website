@@ -71,7 +71,7 @@ function Page() {
           </nav>
         </header>
 
-        <div className="absolute top-0 h-[1200px] pointer-events-none w-screen bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.22)_0,rgba(0,163,255,0.0)_50%,rgba(0,163,255,0)_100%)]"></div>
+        <div className="absolute top-0 h-[1200px] pointer-events-none w-full bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.22)_0,rgba(0,163,255,0.0)_50%,rgba(0,163,255,0)_100%)]"></div>
         <div className="">
           <div className="overflow-hidden xl:overflow-visible  dark:bg-gray-900 mx-auto max-w-6xl lg:pt-44 lg:pb-44 pt-24 pb-24 flex-col align-center justify-center py-8 px-5 xl:px-0">
             <svg
@@ -184,7 +184,7 @@ function Page() {
                   </div>
                 </div>
                 <div className="mt-12 lg:mt-0 lg:absolute justify-center items-center -right-8 lg:w-1/3">
-                  <div className="absolute lg:mt-0 mt-52 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+                  <div className="absolute lg:mt-0 mt-52 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden">
                     <svg
                       viewBox="0 0 558 558"
                       width="500"
