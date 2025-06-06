@@ -181,7 +181,7 @@ function Page() {
                       </div>
                     </a>
                     <span className="block my-auto text-xs lg:text-sm text-slate-500 dark:text-white/50">
-                      589K+ installs
+                      675K+ installs
                     </span>
                   </div>
                 </div>
@@ -362,7 +362,7 @@ function Page() {
                   icon={siX}
                   label="X"
                   className="w-5 h-5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200"
-                  href="https://x.com/BeemDev"
+                  href="https://x.com/beemdevelopment"
                 />
                 <Icon
                   icon={siGmail}
